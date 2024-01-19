@@ -1,9 +1,10 @@
 const express = require('express')
 const app = express()
-const PORT = "https://atlas-test-jv09.onrender.com/"
+const PORT = 3000
 
 app.get("/", (req,res) => {
-    res.status(200).send("Hello world")
+    res.status(200)
+        .json({name: "Tomas"})
 
 })
 
