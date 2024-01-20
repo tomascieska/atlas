@@ -2,7 +2,7 @@ GET http://localhost:3000/subscribers
 
 ###
 
-GET http://localhost:3000/subscribers/15
+GET http://localhost:3000/subscribers/65abaa67b399e3dcbf3e37e9
 
 ###
 
@@ -10,7 +10,19 @@ POST http://localhost:3000/subscribers
 Content-Type: application/json
 
 {
-    "name": "Tomas",
+    "name": "Petras",
     "subscribedToChannel": "Cieska.com"
 }
 
+###
+
+DELETE http://localhost:3000/subscribers/65abb13edf53aacb9822f86f
+
+###
+
+PATCH  http://localhost:3000/subscribers/65abbbcee99a52fafd02bb1e
+Content-Type: application/json
+
+{
+    "name": "New name"
+}
