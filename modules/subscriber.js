@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const subscriberSchema = new mongoose.Schema({
     name: {
         type: String,
-        required: true
+        required: [true, "Please enter the name"]
     },
     subscribedToChannel: {
         type: String,
